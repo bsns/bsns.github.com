@@ -1,136 +1,114 @@
-# This is the default format. 
-# For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:categories/:year/:month/:day/:title 
+# Site settings
+title: BY Blog
+SEOTitle: 柏荧的博客 | BY Blog
+header-img: img/post-bg-desk.jpg
+email: qiubaiying@gmail.com
+description: "Every failure is leading towards success."
+keyword: "BY, BY Blog, 柏荧的博客, qiubaiying, 邱柏荧, iOS, Apple, iPhone"
+url: "http://qiubaiying.github.io"          # your host, for absolute URL
+baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code repository
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-highlighter: pygments
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "Goals determine what you going to be!"
+sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
-# Themes are encouraged to use these universal variables 
-# so be sure to set them if your theme uses them.
-#
-title : Jekyll Bootstrap
-tagline: Site Tagline
-author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
-  feedburner : feedname
 
-# The production_url is only used when full-domain names are needed
-# such as sitemap.txt 
-# Most places will/should use BASE_PATH to make the urls
-#
-# If you have set a CNAME (pages.github.com) set your custom domain here.
-# Else if you are pushing to username.github.io, replace with your username.
-# Finally if you are pushing to a GitHub project page, include the project name at the end.
-#
-production_url : http://username.github.io
 
-gems: ["jekyll-sitemap"]
+# SNS settings
+RSS: false
+# weibo_username:     qiubaiying
+zhihu_username:     qiubaiying
+github_username:    qiubaiying
+facebook_username:  baiying.qiu.7
+jianshu_username:   e71990ada2fd
+#twitter_username:   qiubaiying
 
-# All Jekyll-Bootstrap specific configurations are namespaced into this hash
-#
-JB :
-  version : 0.3.0
 
-  # All links will be namespaced by BASE_PATH if defined.
-  # Links in your website should always be prefixed with {{BASE_PATH}}
-  # however this value will be dynamically changed depending on your deployment situation.
-  #
-  # CNAME (http://yourcustomdomain.com)
-  #   DO NOT SET BASE_PATH 
-  #   (urls will be prefixed with "/" and work relatively)
-  #
-  # GitHub Pages (http://username.github.io)
-  #   DO NOT SET BASE_PATH 
-  #   (urls will be prefixed with "/" and work relatively)
-  #
-  # GitHub Project Pages (http://username.github.io/project-name)
-  #
-  #   A GitHub Project site exists in the `gh-pages` branch of one of your repositories.
-  #  REQUIRED! Set BASE_PATH to: http://username.github.io/project-name
-  #
-  # CAUTION:
-  #   - When in Localhost, your site will run from root "/" regardless of BASE_PATH
-  #   - Only the following values are falsy: ["", null, false]
-  #   - When setting BASE_PATH it must be a valid url.
-  #     This means always setting the protocol (http|https) or prefixing with "/"
-  BASE_PATH : false
 
-  # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
-  # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
-  #
-  # Override this by defining an absolute path to assets here.
-  # ex: 
-  #   http://s3.amazonaws.com/yoursite/themes/watermelon
-  #   /assets
-  #
-  ASSET_PATH : false
 
-  # These paths are to the main pages Jekyll-Bootstrap ships with.
-  # Some JB helpers refer to these paths; change them here if needed.
-  #
-  archive_path: /archive.html
-  categories_path : /categories.html
-  tags_path : /tags.html
-  atom_path : /atom.xml
-  rss_path : /rss.xml
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
-  # Settings for comments helper
-  # Set 'provider' to the comment provider you want to use.
-  # Set 'provider' to false to turn commenting off globally.
-  #
-  comments :
-    provider : disqus
-    disqus :
-      short_name : jekyllbootstrap
-    livefyre :
-      site_id : 123
-    intensedebate :
-      account : 123abc
-    facebook :
-      appid : 123
-      num_posts: 5
-      width: 580
-      colorscheme: light
-    duoshuo :
-      short_name : jekyllbootstrap
-   
-  # Settings for analytics helper
-  # Set 'provider' to the analytics provider you want to use.
-  # Set 'provider' to false to turn analytics off globally.
-  #        
-  analytics :
-    provider : google
-    gauges :
-        site_id : 'SITE ID'
-    google : 
-        tracking_id : 'UA-123-12'
-    getclicky :
-      site_id : 
-    mixpanel :
-        token : '_MIXPANEL_TOKEN_'
-    piwik :
-        baseURL : 'myserver.tld/piwik' # Piwik installation address (without protocol)
-        idsite : '1'                   # the id of the site on Piwik
 
-  # Settings for sharing helper. 
-  # Sharing is for things like tweet, plusone, like, reddit buttons etc.
-  # Set 'provider' to the sharing provider you want to use.
-  # Set 'provider' to false to turn sharing off globally.
-  #
-  sharing :
-    provider : false
-    
-  # Settings for all other include helpers can be defined by creating 
-  # a hash with key named for the given helper. ex:
-  #
-  #   pages_list :
-  #     provider : "custom"   
-  #
-  # Setting any helper's provider to 'custom' will bypass the helper code
-  # and include your custom code. Your custom file must be defined at:
-  #   ./_includes/custom/[HELPER]
-  # where [HELPER] is the name of the helper you are overriding.
-  
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# 评论系统
+# Disqus（https://disqus.com/）
+# disqus_username: qiubaiying
+
+# Gitalk
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID: f2c84e7629bb1446c1a4                            #生成的clientID
+  clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d    #生成的clientSecret
+  repo: qiubaiying.github.io    #仓库名称
+  owner: qiubaiying    #github用户名
+  admin: qiubaiying
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+
+
+# 统计
+
+# Analytics settings
+# Baidu Analytics
+ba_track_id: b50bf2b12b5338a1845e33832976fd68
+
+# Google Analytics
+ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
+ga_domain: qiubaiying.top               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+
+
+
+
+
+# Featured Tags
+featured-tags: true                     # 是否使用首页标签
+featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# Friends
+friends: [
+    {
+        title: "WY",
+        href: "http://zhengwuyang.com"
+    },{
+        title: "简书·BY",
+        href: "http://www.jianshu.com/u/e71990ada2fd"
+    },{
+        title: "Apple",
+        href: "https://apple.com"
+    },{
+        title: "Apple Developer",
+        href: "https://developer.apple.com/"
+    }
+]

@@ -1,4 +1,4 @@
-##[Click](http://www.bsns.github.io)
+##[Click](http://bsns.github.io)
 
 
 ## 致谢

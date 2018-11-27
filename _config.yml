@@ -64,7 +64,7 @@ gitalk:
   enable: true    #是否开启Gitalk评论
   clientID: 0f6bf393617f3e6ef3ed                          #生成的clientID
   clientSecret: b1331c5c008562b07d31ead7ee5cd5baae971b47   #生成的clientSecret
-  repo: bsns.github.io    #仓库名称
+  repo: blog-comments    #仓库名称
   owner: bsns    #github用户名
   admin: bsns
   distractionFreeMode: true #是否启用类似FB的阴影遮罩

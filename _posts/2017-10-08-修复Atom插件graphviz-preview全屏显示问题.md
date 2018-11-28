@@ -23,10 +23,11 @@ tags:
 $HOME/.atom/packages/graphviz-preview/styles/graphviz-preview.less
 
 将最后的部分替换为
-
+```python
 iframe, webview {
     width: 100%;
     height: 100%;
     border: 0;
   }
+```
 替换完成，重启Atom。

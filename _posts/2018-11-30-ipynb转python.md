@@ -20,11 +20,11 @@ tags:
 ![](/img/2018/2018-12-03 16-13-42.png)  
 ubuntu下直接用命令
 ```
-sudo apt install ipython
+sudo apt install ipython3
 ```
 安装完成后直接尝试
 ```
-ipython nbconvert --to=python [YOUR_NOTEBOOK].ipynb
+ipython3 nbconvert --to=python [YOUR_NOTEBOOK].ipynb
 ```
 ![](/img/2018/2018-12-03 16-24-59.png)
 ## 安装ipynb(python2)。

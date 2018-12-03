@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      ipynb转python
-subtitle:   固件错误
+subtitle:   转码
 date:       2018-11-30
 author:     BSNS
 header-img: img/post-bg-desk.jpg

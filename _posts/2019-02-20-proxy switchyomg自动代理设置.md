@@ -22,5 +22,5 @@ https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
 按照规则列表匹配请求 设置为 proxy
 默认 设置为 直接连接
 
-![](../img/2019/2019-02-20.jpeg)
+![](/img/2019/2019-02-20.jpeg)
 设置完应用即可

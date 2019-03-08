@@ -17,7 +17,7 @@ chrome的插件proxy switchyomg自动代理设置
 
 ## 安装插件
 在auto switch的配置中设置AutoProxy的地址为
-https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
+https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt  
 更新情景模式
 按照规则列表匹配请求 设置为 proxy
 默认 设置为 直接连接

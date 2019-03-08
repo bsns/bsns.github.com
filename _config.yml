@@ -99,11 +99,11 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "WY",
-        href: "http://zhengwuyang.com"
+        title: "i坤",
+        href: "https://blog.csdn.net/qq_24572475"
     },{
         title: "简书·BSNS",
-        href: "http://www.jianshu.com/u/e71990ada2fd"
+        href: "http://www.jianshu.com/u/fdc056355dc7"
     },{
         title: "Apple",
         href: "https://apple.com"
